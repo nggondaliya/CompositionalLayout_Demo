@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SectionThreeCell" customModule="DoorDash_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx2-q3-bWc">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="154"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer will end soon! Hurry Up!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qQ-tN-eCi">
+                                <rect key="frame" x="16" y="57.5" width="349" height="27"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is offer!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNk-LA-pvu">
+                                <rect key="frame" x="16" y="16" width="349" height="33.5"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YNk-LA-pvu" firstAttribute="leading" secondItem="kx2-q3-bWc" secondAttribute="leading" constant="16" id="8Pq-oI-laB"/>
+                            <constraint firstItem="7qQ-tN-eCi" firstAttribute="leading" secondItem="kx2-q3-bWc" secondAttribute="leading" constant="16" id="FYt-AV-gfs"/>
+                            <constraint firstAttribute="trailing" secondItem="YNk-LA-pvu" secondAttribute="trailing" constant="16" id="l5z-ie-HFL"/>
+                            <constraint firstItem="YNk-LA-pvu" firstAttribute="top" secondItem="kx2-q3-bWc" secondAttribute="top" constant="16" id="wRh-b5-lPq"/>
+                            <constraint firstAttribute="trailing" secondItem="7qQ-tN-eCi" secondAttribute="trailing" constant="16" id="xGJ-ul-qbk"/>
+                            <constraint firstItem="7qQ-tN-eCi" firstAttribute="top" secondItem="YNk-LA-pvu" secondAttribute="bottom" constant="8" id="xGR-xM-kVx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kx2-q3-bWc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G6I-32-eOK"/>
+                <constraint firstItem="kx2-q3-bWc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gDY-ew-TFe"/>
+                <constraint firstAttribute="trailing" secondItem="kx2-q3-bWc" secondAttribute="trailing" id="qH4-3b-wl5"/>
+                <constraint firstAttribute="bottom" secondItem="kx2-q3-bWc" secondAttribute="bottom" id="xMf-EJ-IdD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="381" height="154"/>
+            <connections>
+                <outlet property="backView" destination="kx2-q3-bWc" id="8eh-9f-dHN"/>
+                <outlet property="lblDescription" destination="7qQ-tN-eCi" id="ZmZ-Pm-qXS"/>
+                <outlet property="lblTitle" destination="YNk-LA-pvu" id="Slk-v3-Lgo"/>
+            </connections>
+            <point key="canvasLocation" x="-41.304347826086961" y="117.85714285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

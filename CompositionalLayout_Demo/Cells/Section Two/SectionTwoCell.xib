@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SectionTwoCell" customModule="DoorDash_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="285"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="285"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eI6-dD-YFW">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="285"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7wX-CE-gkM">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7wX-CE-gkM" secondAttribute="height" multiplier="1:1" id="bRd-Jl-K0T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch Pack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx5-lu-loc">
+                                <rect key="frame" x="47" y="238" width="73" height="27"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Light" family="Mukta Mahee" pointSize="16"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Qx5-lu-loc" secondAttribute="bottom" constant="20" id="4XL-Ab-rYr"/>
+                            <constraint firstAttribute="trailing" secondItem="7wX-CE-gkM" secondAttribute="trailing" id="Fcc-g2-GZk"/>
+                            <constraint firstItem="7wX-CE-gkM" firstAttribute="leading" secondItem="eI6-dD-YFW" secondAttribute="leading" id="Nkp-zB-97a"/>
+                            <constraint firstItem="7wX-CE-gkM" firstAttribute="top" secondItem="eI6-dD-YFW" secondAttribute="top" id="UCz-QC-4c7"/>
+                            <constraint firstItem="Qx5-lu-loc" firstAttribute="centerX" secondItem="eI6-dD-YFW" secondAttribute="centerX" id="cNP-ap-yUn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eI6-dD-YFW" secondAttribute="trailing" id="4TT-TO-vAV"/>
+                <constraint firstAttribute="bottom" secondItem="eI6-dD-YFW" secondAttribute="bottom" id="AvU-lm-YdV"/>
+                <constraint firstItem="eI6-dD-YFW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Awt-Sc-BoB"/>
+                <constraint firstItem="eI6-dD-YFW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f6R-fQ-xpg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="167" height="285"/>
+            <connections>
+                <outlet property="backView" destination="eI6-dD-YFW" id="dAi-jj-PMe"/>
+                <outlet property="img" destination="7wX-CE-gkM" id="7ek-ly-qBx"/>
+                <outlet property="lbl" destination="Qx5-lu-loc" id="Vfc-8f-f5A"/>
+            </connections>
+            <point key="canvasLocation" x="-47.10144927536232" y="136.27232142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
